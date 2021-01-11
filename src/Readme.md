@@ -21,13 +21,13 @@ This file contains different methods used to extract and plot metrics of SCONE s
 ### par_to_controller.py
 This file contains multiple methods aiming to parse SCONE .par files, to modify them and apply them on a controller file.
 ### rename_optim_folder_1d.py
-This script takes as input a folder path of a SCONE optimization and renames it with the parameter gain value. Example:\ 
+This script takes as input a folder path of a SCONE optimization and renames it with the parameter gain value. Example:\
 **input:** results/folder/path/geyer_couplings_multiobjective_soleus-tib_ant_stance_KL_-7.f0914m.GH2010v8.S10W.D10.I\
 **output:** results/folder/path/-7\
 To use this script, run the following terminal command:\
 `python3 rename_optim_folder_1d.py path/to/1d/experiment/result/folder/to/rename`
 ### rename_optim_folder_2d.py
-This script takes as input a folder path of a SCONE optimization and renames it with the parameter gain value. Example:\ 
+This script takes as input a folder path of a SCONE optimization and renames it with the parameter gain value. Example:\
 **input:** results/folder/path/geyer_solLV_multiobjective_stance_KV_swing_KV_KV_0.0_KV_5.0.f0914m.GH2010v8.S10W.D10.I\
 **output:** results/folder/path/0.0_5.0\
 To use this script, run the following terminal command:\

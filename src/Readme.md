@@ -32,7 +32,7 @@ This script takes as input a folder path of a SCONE optimization and renames it 
 **output:** results/folder/path/0.0_5.0\
 To use this script, run the following terminal command:\
 `python3 rename_optim_folder_1d.py path/to/2d/experiment/result/folder/to/rename`
-### scone_recursive_parser.py
+### scone_recursive_parser.py
 This file contains multiple methods to handle SCONE controller files, namely parsing SCONE files to PANDAS Series, filtering, getter and setter methods, exporting to SCONE files, etc.
 ### using_recursive_parser_simple.py, using_recursive_parser_complex.py, using_recursive_parser_simple_cluster_dev.py, using_recursive_parser_simple_cluster_prod.py
 These files are example files, showing how to parse a **.scone** controller file, import new data from a **.par** and generate the necessary folders to run experiments with desired parameter values. Code blocks are commented, displaying the functionalities available. To use these scripts, run the following terminal command:\

@@ -18,7 +18,7 @@ This script is used to deploy SCONE optimization folders for 2d experiments on t
 Make sure to update the directory definitions in the script according to your personal files.\
 To deploy this file on a production node, run: `sbatch -p prod cluster_run_2d.sbatch`\
 To deploy this file on a development node, run: `sbatch cluster_run_2d.sbatch` (make sure to update the number of cores and memory pool.)
-### evaluate_pars.sh
+### evaluate_pars.sh
 This script can be used to evaluate with SCONE the parameter files with the best scores found under the simulation results folders under `results_dir`.
 `results_dir` is a folder path entered as first argument. It needs to contain folders which are obtained from SCONE optimizations.\
 Make sure to update `scone_install` accordingly.\

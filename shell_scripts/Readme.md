@@ -31,5 +31,5 @@ To use this script, run the following terminal command:\
 `run_experiments_folder.sh path/to/experiment/dir/to/optimize`
 ### rsync_results_folder.txt
 This script can be used to synchronize two folders via ssh. Modified and new files on the first folder will be updated on the second folder.
-### scp_exports_folder.txt
+### scp_exports_folder.txt
 This script can be used to secure copy via ssh a results folder from a linux folder to a personal computer.

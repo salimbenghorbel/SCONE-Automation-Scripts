@@ -11,12 +11,12 @@ This script can be used to generate proper folder structure from SCONE results f
 ### cluster_run_1d.sbatch
 This script is used to deploy SCONE optimization folders for 1d experiments on the Biorob computer cluster.\
 Make sure to update the directory definitions in the script according to your personal files.\
-To deploy this file on a production node, run: `sbatch -p prod cluster_run_1d.sbatch\`
+To deploy this file on a production node, run: `sbatch -p prod cluster_run_1d.sbatch`\
 To deploy this file on a development node, run: `sbatch cluster_run_1d.sbatch` (make sure to update the number of cores and memory pool.)
 ### cluster_run_2d.sbatch
 This script is used to deploy SCONE optimization folders for 2d experiments on the Biorob computer cluster.\
 Make sure to update the directory definitions in the script according to your personal files.\
-To deploy this file on a production node, run: `sbatch -p prod cluster_run_2d.sbatch\`
+To deploy this file on a production node, run: `sbatch -p prod cluster_run_2d.sbatch`\
 To deploy this file on a development node, run: `sbatch cluster_run_2d.sbatch` (make sure to update the number of cores and memory pool.)
 ### evaluate_pars.sh
 This script can be used to evaluate with SCONE the parameter files with the best scores found under the simulation results folders under `results_dir`.

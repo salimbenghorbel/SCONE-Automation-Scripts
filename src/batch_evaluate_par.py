@@ -3,6 +3,8 @@ This script is called witha folder containing SCONE experiment result folders
 as first argument. It will identify all the .par files found recursively under
 the source folder and returns the paths of the par files which present the best
 score for each optimization.
+To use this script, run the following terminal command:\
+    python3 batch_evaluate_par.py *path/to/results/folder/to/evaluate*
 """
 import sys, os
 from pathlib import Path

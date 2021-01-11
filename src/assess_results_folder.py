@@ -1,7 +1,9 @@
 """
-This script aims to organize a results folder in a new folder structre. 
-Then, it evaluates different metrics for each of the parameters explored and 
+This script takes as input a path of a results folder with an organized folder structure. 
+It evaluates different metrics for each of the parameters explored and 
 generates a report folder containing visualization of these metrics.
+To use this script, run the following terminal command:\
+    python3  assess_results_folder.py *path/to/organized/results/folder*
 """
 
 import sys, os

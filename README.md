@@ -17,7 +17,7 @@ Salim Ben Ghorbel
 ## Supervisors
 Alice Bruel\
 Andrea Di Russo\
-Dimitar Stanev\
+Dimitar Stanev
 
 ## Professor
 Prof. Auke Ijspeert

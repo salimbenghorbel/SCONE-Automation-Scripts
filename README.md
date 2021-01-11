@@ -15,9 +15,9 @@ If not explicitly mentionned, it is insinuated that all the parameters explored 
 Salim Ben Ghorbel
 
 ## Supervisors
-Alice Bruel
-Andrea Di Russo
-Dimitar Stanev
+Alice Bruel\
+Andrea Di Russo\
+Dimitar Stanev\
 
 ## Professor
 Prof. Auke Ijspeert

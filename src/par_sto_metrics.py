@@ -160,16 +160,16 @@ def plot_mean_gc(sto_files, parameter_values, var_name, side, ylabel, title, exp
     fig, ax = plt.subplots()
     
     
-    
+    min_value = np.min(parameter_values)
+    max_value = np.max(parameter_values)
+    max_diff = np.max([max_value - healthy_value, healthy_value - min_value])
+        
     try:
-        min_value = np.min(parameter_values)
-        max_value = np.max(parameter_values)
-        max_diff = np.max([max_value - healthy_value, healthy_value - min_value])
         color_offset = mcolors.TwoSlopeNorm(vmin=healthy_value - np.mean([max_diff, healthy_value - min_value]), vcenter=healthy_value, vmax=healthy_value + np.mean([max_diff, max_value - healthy_value]))
     except :
         color_offset = mcolors.TwoSlopeNorm(vcenter=healthy_value)
         
-        
+    color_offset = mcolors.Normalize(vmin=min_value,vmax = max_value)    
     # start with healthy plot
     parameter_value = healthy_value    
     sto_file = healthy_sto

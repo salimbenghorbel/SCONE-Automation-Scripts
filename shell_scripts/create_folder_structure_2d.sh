@@ -3,7 +3,7 @@
 # Make sure to modify python_script according to where the scripts will be run.
 results_dir=$1
 destination_dir=$2
-python_script='/Users/Selim/Documents/Etudes/Automne 2020 Master Robotique/BioRob Semester Project/switchdrive/Biorob_semester_project/src/rename_optim_folder_2d.py'
+python_script='/Users/Selim/Documents/Etudes/Automne 2020 Master Robotique/BioRob Semester Project/switchdrive/Biorob_semester_project/SCONE-Automation-Scripts/src/rename_optim_folder_2d.py'
 current_dir=$(pwd)
 parent_dir="$(dirname "$current_dir")"
 mkdir "$destination_dir"

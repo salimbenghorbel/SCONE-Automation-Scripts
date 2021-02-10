@@ -6,21 +6,21 @@ import numpy as np
 complex_controller = srp.controller_file_to_string("../models/gait_controllers/cx_gait_controller.txt")
 simple_controller = srp.controller_file_to_string("../models/gait_controllers/sp_gait_controller.txt")
 geyer_controller = srp.controller_file_to_string("../models/gait_controllers/geyer_gait_controller.txt")
-geyer_simple_controller = srp.controller_file_to_string("../models/gait_controllers/geyer_simple_gait_controller.txt")
+#geyer_simple_controller = srp.controller_file_to_string("../models/gait_controllers/geyer_simple_gait_controller.txt")
 geyer_couplings_controller = srp.controller_file_to_string("../models/gait_controllers/geyer_couplings_gait_controller.txt")
 
 # convert controller string to recursive dictionnary
 cx_dict = srp.dict_recursive_split(complex_controller)
 sp_dict = srp.dict_recursive_split(simple_controller)
 ge_dict = srp.dict_recursive_split(geyer_controller)
-ge_simple_dict = srp.dict_recursive_split(geyer_simple_controller)
+#ge_simple_dict = srp.dict_recursive_split(geyer_simple_controller)
 ge_couplings_dict = srp.dict_recursive_split(geyer_couplings_controller)
 
 # convert controller string to recursive pandas Series
 cx_series = srp.series_recursive_split(complex_controller)
 sp_series = srp.series_recursive_split(simple_controller)
 ge_series = srp.series_recursive_split(geyer_controller)
-ge_simple_series = srp.series_recursive_split(geyer_simple_controller)
+#ge_simple_series = srp.series_recursive_split(geyer_simple_controller)
 ge_couplings_series = srp.series_recursive_split(geyer_couplings_controller)
 
 # get, set then get value again of existant key

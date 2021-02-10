@@ -1,0 +1,34 @@
+CmaOptimizer {
+	
+signature_prefix = "new_TAV_GAS_soleus_gastroc_KV_2D_stance_swing_KV_10_KV_90"	
+	max_generations = 3000
+	init_file = new_inits/new_TAV_GAS_init.par
+	use_init_file = true
+	use_init_file_std = false
+	# max_threads = 1
+	
+	SimulationObjective {
+		max_duration = 15
+		
+		# Model used in simulation
+		ModelOpenSim3 {
+			model_file = gait0914.osim
+			
+			# Optimize initial state parameters
+			state_init_file = initial_state.sto
+			initial_state_offset =	0~0.01<-0.5,0.5>	
+			initial_state_offset_exclude = "*_tx;*_ty;*_u"
+			
+			# disable/enable supporting force
+			Properties {
+				support {isDisabled = true}
+			}
+		}
+		
+		# Controller for gait, based on [Geyer & Herr 2010]
+		<< ../new_controller_TAV_GAS.scone >>
+		
+		# Measure for gait
+		<< gait_measure.scone >>
+	}
+}
